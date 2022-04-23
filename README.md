@@ -60,6 +60,7 @@ The output would be:
 ## Implementation notes
 
 **This solution is massively over engineered.**
+
 Thought it would be fun to make it so that a continuous stream of input could be processed, and
 to add abstractions to easily change where that data is read from and results written to.
 
