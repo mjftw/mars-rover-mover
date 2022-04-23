@@ -72,6 +72,8 @@ It could also do with more unit tests, but the top level black box test is enoug
 sbt 'run input_file output_file'
 ```
 
+Example:
+
 ```shell
 $ sbt 'run commands.txt output.txt'
 [info] welcome to sbt 1.5.8 (Ubuntu Java 11.0.14.1)
