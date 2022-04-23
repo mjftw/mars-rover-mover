@@ -56,6 +56,15 @@ The output would be:
 (2, 3, W)
 (1, 0, S) LOST
 ```
+
+## Implementation notes
+
+**This solution is massively over engineered.**
+Thought it would be fun to make it so that a continuous stream of input could be processed, and
+to add abstractions to easily change where that data is read from and results written to.
+
+It could also do with more unit tests, but the top level black box test is enough to prove it works.
+
 ## Run application
 
 ```shell
