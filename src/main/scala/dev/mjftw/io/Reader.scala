@@ -37,7 +37,7 @@ object Reader {
       implicit logger: Logger[F]
   ): Reader[F, CommandContext] = new Reader[F, CommandContext] {
     override def read: Stream[F, CommandContext] = {
-      val lines = reader.read
+      val lines = reader.read.filter(!_.isBlank())
 
       // Take the first line and decode it to a grid
       val grid = lines
